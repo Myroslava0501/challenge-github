@@ -1,0 +1,126 @@
+.container {
+  font-family: "Quicksand", sans-serif;
+  margin-top: 30px;
+}
+
+.weatherapp {
+  border: solid 2px #5eb5c073;
+  box-shadow: 1px 1px 8px rgb(179 179 179);
+  border-radius: 10px;
+  padding: 20px 20px;
+  margin: 27px auto;
+  max-width: 800px;
+  height: 600px;
+  background: linear-gradient(
+    109.6deg,
+    rgb(204, 228, 247) 11.2%,
+    rgb(237, 246, 250) 100.2%
+  );
+}
+
+form {
+  display: block;
+  width: 400px;
+  margin-top: 30px;
+  margin-left: 25px;
+  margin-bottom: 50px;
+}
+input {
+  height: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 8px rgb(179 179 179);
+}
+
+.current-city {
+  margin-left: 40px;
+  border: 1px solid
+    linear-gradient(
+      109.6deg,
+      rgb(204, 228, 247) 11.2%,
+      rgb(237, 246, 250) 100.2%
+    );
+  width: 250px;
+  text-align: center;
+  background-color: #e5f1f9;
+  box-shadow: 1px 1px 8px rgb(179 179 179);
+  font-size: 20px;
+  margin-bottom: 50px;
+  height: 330px;
+}
+
+.city {
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-weight: 900;
+}
+
+.current-weather {
+  margin-bottom: 0;
+  font-size: 22px;
+}
+#temperature {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  color: black;
+}
+
+.discription {
+  font-size: 15px;
+  margin-top: 20px;
+  text-align: start;
+  margin-left: 8px;
+  font-style: italic;
+  font-weight: 600;
+}
+.row {
+  width: 300px;
+  position: relative;
+  left: 350px;
+  top: -320px;
+
+  padding: 15px;
+}
+.text-center {
+  margin-left: 5px;
+}
+
+.text-center-right {
+  margin-left: 40px;
+  text-align: center;
+}
+
+.days {
+  font-size: 20px;
+}
+.week-temperature-max {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+}
+.week-temperature-min {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+}
+img {
+  width: 70px;
+}
+.coded {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.8;
+  font-style: italic;
+}
+.myName {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.8;
+  padding-top: 38px;
+}
