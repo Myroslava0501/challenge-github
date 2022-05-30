@@ -46,7 +46,7 @@ img {
       rgb(204, 228, 247) 11.2%,
       rgb(237, 246, 250) 100.2%
     );
-  max-width: 300px;
+  width: 300px;
   text-align: center;
   background-color: #e5f1f9;
   box-shadow: 1px 1px 8px rgb(179 179 179);
@@ -139,4 +139,13 @@ img {
   font-size: 12px;
   opacity: 0.8;
   padding-top: 38px;
+}
+.pictureone .active {
+  color: black;
+  text-decoration: none;
+  cursor: default;
+}
+.pictureone .active :hover {
+  text-decoration: none;
+  color: black;
 }

@@ -42,27 +42,28 @@
         </button>
         <button type="button" class="btn btn-light-location"id="location">
           <i class="fa-solid fa-location-arrow"></i>
-        </button>
+        </button>  
       </form>
        <div class="current-city">
-        <span class="city"id='currentCity'>Krakow</span>
+        <span class="city"id='currentCity'></span>
         <div class="pictureone">
-          <span class="current-weather"id="temperature">19</span><span class="units">℃|<a class="list-unstyled" href="#">°F</a></span>
+          <span class="current-weather"id="temperature"></span><span class="units"><a class="list-unstyled active" id="celsius"href="#">℃</a>|<a class="list-unstyled" id="fahrenheit"href="#">°F</a></span>
           <br />
           <img
+          id="forecast-icon"
             src="https://delicate-syrniki-fd5eec.netlify.app/images/sunandcloud.png"
           />
           <br />
-          <span class="current-weather"><strong id="description">Sunny</strong></span>
+          <span class="current-weather"><strong id="description"></strong></span>
         </div>
         <div>
-          <p class="current-weather" id ="today">Tuesday 19:25</p>
-          <p class="current-weather" id = "full">10.05.2022</p>
+          <p class="current-weather" id ="today"></p>
+          <p class="current-weather" id = "full"></p>
           <div class="discription">
-            <span><i class="fa-solid fa-droplet"></i><span id=humidity>40%</span></span>
+            <span><i class="fa-solid fa-droplet"></i><span id=humidity></span>%</span>
             <span><i class="fa-solid fa-wind"></i><span id=speed>5</span>km/h</span>
           </div>
-           <span>Feels like <span id="feelsLike">20</span>℃</span>
+           <span>Feels like <span id="feelsLike"></span>℃</span>
           <div class="row" id="forecast">
             <div class="col-5 text-center">
               <span class="days">Fri</span>

@@ -45,7 +45,6 @@ let year = now.getFullYear();
 full.innerHTML = `${date}.${month}.${year}`;
 
 function displayWeather(response) {
-  console.log(response.data);
   document.querySelector("#currentCity").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
@@ -61,7 +60,10 @@ function displayWeather(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+
+  celsiusTemp = Math.round(response.data.main.temp);
 }
+
 function searchCity(city) {
   let apiKey = "b23da6817af02c700cc67fc7aecfce3a";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -92,10 +94,25 @@ currentLocationButton.addEventListener("click", displayLocalWeather);
 
 searchCity("Warsaw");
 
-function font() {
-  if (wordSize > 6) {
-    document.getElementById("currentCity").style.fontSize = "15px";
-  }
+function dispayFahranheit(event) {
+  event.preventDefault();
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahranheitTemp = (celsiusTemp * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(fahranheitTemp);
+}
+function dispayCelsius(event) {
+  event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = celsiusTemp;
 }
 
-let wordSize = document.querySelector("#currentCity");
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", dispayFahranheit);
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", dispayCelsius);
+
+let celsiusTemp = null;
