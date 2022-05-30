@@ -91,3 +91,11 @@ let currentLocationButton = document.querySelector("#location");
 currentLocationButton.addEventListener("click", displayLocalWeather);
 
 searchCity("Warsaw");
+
+function font() {
+  if (wordSize > 6) {
+    document.getElementById("currentCity").style.fontSize = "15px";
+  }
+}
+
+let wordSize = document.querySelector("#currentCity");
