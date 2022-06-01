@@ -48,14 +48,13 @@ function dayFormat(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDate();
   let days = [
-    "0",
-    "Sunday",
-    "Monday",
-    "Tuesday",
     "Wednesday",
     "Thursday",
     "Friday",
     "Saturday",
+    "Sunday",
+    "Monday",
+    "Tuesday",
   ];
   return days[day];
 }
