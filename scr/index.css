@@ -149,3 +149,6 @@ img {
   text-decoration: none;
   color: black;
 }
+.week-temperature-min {
+  opacity: 0.5;
+}

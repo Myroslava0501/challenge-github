@@ -75,12 +75,11 @@ function displayForcast(response) {
 
   <img
   id="forecast-icon"
-  src="https://delicate-syrniki-fd5eec.netlify.app/images/clearsky.png"
-  alt=""
+  src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
   />
   <div>
-  <span class="week-temperature-max">${Math.round(forecastDay.temp.max)}</span>
-  <span class="week-temperature-min">${Math.round(forecastDay.temp.min)}</span>
+  <span class="week-temperature-max">${Math.round(forecastDay.temp.max)}°</span>
+  <span class="week-temperature-min">${Math.round(forecastDay.temp.min)}°</span>
   </div>
   </div>`;
   });
@@ -113,6 +112,9 @@ function displayWeather(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
   getForcast(response.data.coord);
+  document.querySelector(
+    "#forecast-icon"
+  ).innerHTML = `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
 }
 
 function searchCity(city) {
@@ -141,3 +143,4 @@ form.addEventListener("submit", handelSubmit);
 
 let currentLocationButton = document.querySelector("#location");
 currentLocationButton.addEventListener("click", displayLocalWeather);
+searchCity("Warsaw");
