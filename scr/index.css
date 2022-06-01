@@ -4,18 +4,14 @@
 }
 
 .weatherapp {
-  border: solid 2px #5eb5c073;
-  box-shadow: 1px 1px 8px rgb(179 179 179);
+  border: solid 2px rgb(160, 202, 236);
+  box-shadow: 1px 1px 8px rgb(158, 210, 235);
   border-radius: 10px;
   padding: 20px 20px;
   margin: 27px auto;
   max-width: 800px;
   height: 600px;
-  background: linear-gradient(
-    109.6deg,
-    rgb(204, 228, 247) 11.2%,
-    rgb(237, 246, 250) 100.2%
-  );
+  background: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
 }
 
 form {
@@ -28,35 +24,30 @@ form {
 input {
   height: 30px;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: rgb(220, 240, 164);
   border: 1px solid grey;
   box-shadow: 1px 1px 8px rgb(179 179 179);
 }
 img {
   width: 70px;
 }
+
 .list-unstyled {
   text-decoration: none;
 }
 .current-city {
   margin-left: 30px;
-  border: 1px solid
-    linear-gradient(
-      109.6deg,
-      rgb(204, 228, 247) 11.2%,
-      rgb(237, 246, 250) 100.2%
-    );
   width: 300px;
   text-align: center;
-  background-color: #e5f1f9;
-  box-shadow: 1px 1px 8px rgb(179 179 179);
+  background: linear-gradient(60deg, #64b3f4 0%, #c2e59c 60%);
+  box-shadow: 1px 1px 8px rgb(158, 210, 235);
   font-size: 20px;
   margin-bottom: 50px;
-  height: 340px;
+  height: 370px;
 }
 
 .city {
-  font-size: 50px;
+  font-size: 2.5vw;
   letter-spacing: 5px;
   font-weight: 800;
 }
@@ -98,25 +89,15 @@ img {
   font-weight: 600;
   text-align: center;
 }
+
 .row {
   width: 300px;
   position: relative;
-  left: 350px;
-  top: -320px;
-  padding: 15px;
-}
-.text-center {
-  margin-left: 5px;
+  left: 380px;
+  top: -350px;
+  padding: 10px;
 }
 
-.text-center-right {
-  margin-left: 40px;
-  text-align: center;
-}
-
-.days {
-  font-size: 20px;
-}
 .week-temperature-max {
   font-size: 18px;
   font-weight: bold;
@@ -126,19 +107,13 @@ img {
   font-size: 18px;
   font-weight: bold;
   font-style: italic;
+  opacity: 0.5;
 }
 
-.coded {
-  text-align: center;
-  font-size: 13px;
-  opacity: 0.8;
-  font-style: italic;
-}
 .myName {
   text-align: center;
   font-size: 12px;
   opacity: 0.8;
-  padding-top: 38px;
 }
 .pictureone .active {
   color: black;
@@ -148,7 +123,4 @@ img {
 .pictureone .active :hover {
   text-decoration: none;
   color: black;
-}
-.week-temperature-min {
-  opacity: 0.5;
 }
