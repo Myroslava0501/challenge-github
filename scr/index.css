@@ -11,7 +11,7 @@
   margin: 27px auto;
   max-width: 800px;
   height: 600px;
-  background: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+  background: rgb(168, 207, 212);
 }
 
 form {
@@ -35,11 +35,12 @@ img {
 .list-unstyled {
   text-decoration: none;
 }
+
 .current-city {
   margin-left: 30px;
   width: 300px;
   text-align: center;
-  background: linear-gradient(60deg, #64b3f4 0%, #c2e59c 60%);
+  background: rgb(220, 240, 164);
   box-shadow: 1px 1px 8px rgb(158, 210, 235);
   font-size: 20px;
   margin-bottom: 50px;
@@ -94,7 +95,7 @@ img {
   width: 300px;
   position: relative;
   left: 380px;
-  top: -350px;
+  top: -345px;
   padding: 10px;
 }
 
